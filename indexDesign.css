@@ -1,0 +1,81 @@
+/*Länkar till bilder*/
+/*Bakgrundsbilden: https://unsplash.com/photos/yRsBZJuhbkk */
+/*Tillfälliga projektbilderna: https://freesvg.org/graphic-placeholder */
+
+/*Bakgrundsbild*/
+body {
+  background-image: url("images/indexBackground.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*Allmän design*/
+.flex-frame {
+  display: flex;
+  background-color: #0099ff;
+  width: 35%;
+  border-radius: 20px;
+  padding: 1%;
+  margin-left: 31.5%;
+  margin-top: 2%;
+  outline-style: solid;
+  font-family: sans-serif;
+  align-items: center;
+}
+
+/*Lista med projekt*/
+.flex-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/*Projektrutor*/
+.flex-container {
+  margin-left: 8.7%;
+  flex-direction: column;
+}
+
+/*Länkknappar*/
+a {
+  background-color: #66ccff;
+  border-radius: 10px;
+  padding: 2%;
+  margin-top: 2%;
+  outline-style: solid;
+  text-decoration: none;
+  color: black;
+  font-size: large;
+  font-weight: bold;
+}
+
+/*Hovrar över länkknappar*/
+a:hover {
+  background-color: #0066cc;
+  color: #ffffff;
+}
+
+/*Bilder*/
+img {
+  width: 40%;
+  float: left;
+  padding-right: 5px;
+}
+
+/*Rubrik*/
+.header {
+  justify-content: center;
+  text-align: center;
+}
+
+/*Anpassning till mindre skärmar*/
+@media (max-width: 800px) {
+  .flex-frame {
+    width: 70%;
+    margin-left: 14%;
+    margin-top: 4%;
+  }
+  .flex-container {
+    flex-direction: column;
+  }
+}
