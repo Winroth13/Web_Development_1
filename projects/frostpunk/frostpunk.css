@@ -180,7 +180,7 @@ footer ul li a {
 /* ---------------------------- */
 
 /* Anpassning till mindre skärmar */
-@media (max-width: 600px) {
+@media (orientation: portrait) {
   .image-list > a {
     width: 50%;
   }
